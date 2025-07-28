@@ -7,7 +7,7 @@ if (isset($update['callback_query'])) {
     $chat_id = $update['callback_query']['message']['chat']['id'];
 
     // Marcar como respondido
-    $response_url = "https://api.telegram.org/bot7921909181:AAHV2whdVE4DeJYcHphjHNv_HKiPqYLSgEk/answerCallbackQuery";
+    $response_url = "https://api.telegram.org/bot8271856470:AAGQqlQs00QrS6wioQ7Gidz3m5W9Uy4wWaM/answerCallbackQuery";
     $callback_data = [
         'callback_query_id' => $update['callback_query']['id'],
         'text' => '✅ Acción registrada',
