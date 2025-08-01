@@ -58,7 +58,7 @@
     <div class="loaderp">
       <div class="loader"></div>
       <div class="loaderp-text">Cargando...</div>
-      <h6>Por favor espere en linea para esperar el resultado de su analisis correctamente.</h6>
+      
     </div>
   </div>
 
